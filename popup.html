@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tiny Dodger</title>
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <h1>✦ <span id="title">Tiny Dodger</span></h1>
+                <p id="tagline">Survive the falling sky.</p>
+            </div><button id="settings" class="icon" aria-label="Settings" aria-controls="panel"
+                aria-expanded="false">⚙</button>
+        </header>
+        <section class="hud" aria-label="Game statistics">
+            <div><small id="scoreLabel">SCORE</small><b id="score">0</b></div>
+            <div><small id="timeLabel">TIME</small><b id="time">0.0</b></div>
+            <div><small id="comboLabel">COMBO</small><b id="combo">×1</b></div>
+        </section>
+        <div class="stage"><canvas id="game" width="390" height="400" tabindex="0"
+                aria-label="Tiny Dodger game. Use left and right arrow keys or A and D to move."></canvas>
+            <div class="move-controls"><button id="moveLeft" type="button" aria-label="Left">←</button><button
+                    id="moveRight" type="button" aria-label="Right">→</button></div>
+            <div class="overlay" id="overlay">
+                <h2 id="overlayTitle">Ready?</h2>
+                <p id="overlayText">Move with A / D or ← / →. Dodge the blocks!</p><button id="play">Play</button>
+            </div>
+        </div>
+        <div class="actions"><button id="pause">Pause</button><button id="restart">Restart</button><span id="best">Best:
+                0</span></div>
+        <section id="panel" class="panel" hidden><label id="langLabel">Language<select
+                    id="language"></select></label><label><input type="checkbox" id="sound"> <span
+                    id="soundLabel">Sound</span></label><label><input type="checkbox" id="shake"> <span
+                    id="shakeLabel">Screen shake</span></label><label><input type="checkbox" id="motion"> <span
+                    id="motionLabel">Reduced motion</span></label><label id="controlLabel">Controls<select id="control">
+                    <option value="keys">Keyboard + pointer</option>
+                    <option value="pointer">Pointer</option>
+                </select></label>
+            <p id="stats"></p>
+        </section>
+        <p class="hint" id="hint">Near-miss obstacles to build a combo. Collect stars for bonus points.</p>
+        <div class="extension-meta"><a href="https://ashokri.com/donate/" target="_blank" rel="noopener noreferrer"
+                data-i18n="donate">Donate</a><span aria-hidden="true">-</span><span data-i18n="version">Version
+                1.0.0</span></div>
+    </main>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
