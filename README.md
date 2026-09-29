@@ -12,6 +12,10 @@ Tiny Dodger is a compact, multilingual arcade game for the browser. Players move
 
 The extension delivers an instantly accessible arcade challenge for short play sessions while supporting keyboard and pointer controls, sound preferences, and reduced-motion options.
 
+## Download
+
+[Chrome](#) - [Firefox](https://addons.mozilla.org/firefox/addon/tiny-dodger/)
+
 ## License
 
 Tiny Dodger is licensed under the MIT License. See the `LICENSE` file for the full license text.
